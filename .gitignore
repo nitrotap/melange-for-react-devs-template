@@ -3,3 +3,17 @@ node_modules/
 _build/
 _opam/
 dist/
+
+.env
+
+scratch.*
+scratch/
+.vscode
+
+melange-for-react-devs/
+.idea/
+melange-docs/
+Archive.zip
+
+melange-docs-output.*
+melange-docs.*
