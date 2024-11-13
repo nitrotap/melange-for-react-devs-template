@@ -5,10 +5,14 @@ module App = {
     // Wrap elements in a single parent div to ensure valid JSX
     <div>
       <h1> {React.string("Welcome to my app!")} </h1>
-      <Chatbot
-        message="Hello! I'm your chatbot."
-        onSend={(input: string) => Js.log("User said: " ++ input)}
-      />
+        <Chatbot
+          message="Hello! I'm your chatbot."
+          onSend={(input: string) => {
+            let response = "You said: " ++ input;
+            Js.log(response); // Log the response
+            response; // Return the response
+          }}
+        />
     </div>
   };
 };
